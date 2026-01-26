@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-100 py-16 px-6">
@@ -25,30 +27,30 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-6">Platform</h4>
           <ul className="space-y-4 text-sm text-gray-400">
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Browse Groups</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Study Quizzes</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Campus Events</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Q&A Forums</a></li>
+            <li><Link to="/browse-groups" className="hover:text-[#2D6886] transition-colors">Browse Groups</Link></li>
+            <li><Link to="/study-quizzes" className="hover:text-[#2D6886] transition-colors">Study Quizzes</Link></li>
+            <li><Link to="/campus-events" className="hover:text-[#2D6886] transition-colors">Campus Events</Link></li>
+            <li><Link to="/qa-forums" className="hover:text-[#2D6886] transition-colors">Q&A Forums</Link></li>
           </ul>
         </div>
         
         <div>
           <h4 className="font-bold mb-6">Company</h4>
           <ul className="space-y-4 text-sm text-gray-400">
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">About Us</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Careers</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Terms of Service</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Privacy Policy</a></li>
+            <li><Link to="/about" className="hover:text-[#2D6886] transition-colors">About Us</Link></li>
+            <li><Link to="/careers" className="hover:text-[#2D6886] transition-colors">Careers</Link></li>
+            <li><Link to="/terms" className="hover:text-[#2D6886] transition-colors">Terms of Service</Link></li>
+            <li><Link to="/privacy" className="hover:text-[#2D6886] transition-colors">Privacy Policy</Link></li>
           </ul>
         </div>
         
         <div>
           <h4 className="font-bold mb-6">Support</h4>
           <ul className="space-y-4 text-sm text-gray-400">
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Help Center</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Safety Center</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Report Abuse</a></li>
-            <li><a className="hover:text-[#2D6886] transition-colors" href="#">Contact Us</a></li>
+            <li><Link to="/help" className="hover:text-[#2D6886] transition-colors">Help Center</Link></li>
+            <li><Link to="/safety" className="hover:text-[#2D6886] transition-colors">Safety Center</Link></li>
+            <li><Link to="/report" className="hover:text-[#2D6886] transition-colors">Report Abuse</Link></li>
+            <li><Link to="/contact" className="hover:text-[#2D6886] transition-colors">Contact Us</Link></li>
           </ul>
         </div>
       </div>

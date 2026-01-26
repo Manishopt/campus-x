@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Hero() {
   return (
     <section className="relative py-12 px-6 overflow-hidden">
@@ -30,10 +32,10 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#2D6886] hover:bg-[#2D6886]/90 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all flex items-center justify-center gap-2 group/btn">
+              <Link to="/login" className="bg-[#2D6886] hover:bg-[#2D6886]/90 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all flex items-center justify-center gap-2 group/btn">
                 Join with your college email
                 <span className="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

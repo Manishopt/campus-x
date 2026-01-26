@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function CTA() {
   return (
     <section className="py-24 px-6">
@@ -11,9 +13,9 @@ export default function CTA() {
           <p className="text-[#2D6886]/20 text-white/80 text-lg mb-12 max-w-2xl mx-auto">Join your peers today and discover a smarter way to learn together. No ads, no noise, just students.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-[#2D6886] hover:bg-gray-50 px-10 py-5 rounded-2xl text-lg font-black transition-all shadow-xl shadow-black/10 w-full sm:w-auto">
+            <Link to="/login" className="bg-white text-[#2D6886] hover:bg-gray-50 px-10 py-5 rounded-2xl text-lg font-black transition-all shadow-xl shadow-black/10 w-full sm:w-auto">
               Join with your college email
-            </button>
+            </Link>
             <button className="text-white font-bold border border-white/20 hover:bg-white/10 px-10 py-5 rounded-2xl text-lg transition-all w-full sm:w-auto">
               View Demo
             </button>
