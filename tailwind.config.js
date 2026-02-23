@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary": "#2d6886",
+        "primary": "#2e45b8",
         "accent-green": "#28A745",
-        "background-light": "#f6f7f8",
-        "background-dark": "#141b1e",
+        "background-light": "#fafafa",
+        "background-dark": "#181a1e",
       },
       fontFamily: {
         "display": ["Manrope", "sans-serif"]
